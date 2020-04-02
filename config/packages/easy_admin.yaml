@@ -44,6 +44,5 @@ easy_admin:
           - id
           - email
           - { property: isScientist, label: 'Is Scientist?', type: boolean }
-          - firstName
-          - lastName
+          - fullName
           - avatarUri
