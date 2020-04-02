@@ -12,6 +12,9 @@ easy_admin:
       label: Genuses
     GenusNote:
       class: App\Entity\GenusNote
+      label: 'Genus Notes'
+      list:
+        title: 'List of notes'
     SubFamily:
       class: App\Entity\SubFamily
     User:
