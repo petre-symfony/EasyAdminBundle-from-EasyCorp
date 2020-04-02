@@ -39,3 +39,11 @@ easy_admin:
       disabled_actions: ['show']
     User:
       class: App\Entity\User
+      list:
+        fields:
+          - id
+          - email
+          - { property: isScientist, label: 'Is Scientist?', type: boolean }
+          - firstName
+          - lastName
+          - avatarUri
