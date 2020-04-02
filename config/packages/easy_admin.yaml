@@ -32,6 +32,12 @@ easy_admin:
       label: 'Genus Notes'
       list:
         title: 'List of notes'
+        fields:
+          - id
+          - username
+          - { property: userAvatarFilename, label: 'User avatar', type: image }
+          - createdAt
+          - genus
     SubFamily:
       class: App\Entity\SubFamily
       list:
