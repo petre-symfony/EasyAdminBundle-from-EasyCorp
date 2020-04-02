@@ -32,7 +32,9 @@ easy_admin:
       class: App\Entity\Genus
       label: Horde of Genuses 😲️ !!!
       list:
-        dql_filter: 'entity.speciesCount >= 50000'
+        dql_filter: 'entity.speciesCount >= 50000 AND entity.isPublished = true'
+        sort: speciesCount
+        help: 'Run for your life!!! 😲️😲️😲️'
     GenusNote:
       class: App\Entity\GenusNote
       label: 'Genus Notes'
