@@ -25,5 +25,6 @@ easy_admin:
       class: App\Entity\SubFamily
       list:
         actions: ['-show']
+      disabled_actions: ['show']
     User:
       class: App\Entity\User
