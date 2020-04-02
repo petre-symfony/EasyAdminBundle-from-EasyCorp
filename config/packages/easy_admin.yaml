@@ -26,6 +26,7 @@ easy_admin:
           - { property: speciesCount, format: '%b' }
       search:
         help: null
+        fields: [id, name]
     GenusNote:
       class: App\Entity\GenusNote
       label: 'Genus Notes'
