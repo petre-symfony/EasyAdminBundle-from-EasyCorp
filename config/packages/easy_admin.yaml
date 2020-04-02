@@ -31,6 +31,8 @@ easy_admin:
     GenusHorde:
       class: App\Entity\Genus
       label: Horde of Genuses 😲️ !!!
+      list:
+        dql_filter: 'entity.speciesCount >= 50000'
     GenusNote:
       class: App\Entity\GenusNote
       label: 'Genus Notes'
