@@ -24,6 +24,7 @@ easy_admin:
           - { property: firstDiscoveredAt, format: 'M Y', label: Discovered }
           - funFact
           - { property: speciesCount, format: '%b' }
+        sort: name
       search:
         help: null
         fields: [id, name]
