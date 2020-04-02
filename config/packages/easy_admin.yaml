@@ -28,6 +28,9 @@ easy_admin:
       search:
         help: null
         fields: [id, name]
+    GenusHorde:
+      class: App\Entity\Genus
+      label: Horde of Genuses 😲️ !!!
     GenusNote:
       class: App\Entity\GenusNote
       label: 'Genus Notes'
