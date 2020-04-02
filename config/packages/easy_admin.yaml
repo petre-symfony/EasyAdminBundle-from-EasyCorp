@@ -42,7 +42,7 @@ easy_admin:
       list:
         fields:
           - id
-          - email
+          - { property: email, type: email }
           - { property: isScientist, label: 'Is Scientist?', type: boolean }
           - fullName
-          - avatarUri
+          - { property: avatarUri, type: url }
