@@ -35,7 +35,7 @@ easy_admin:
         fields:
           - id
           - username
-          - { property: userAvatarFilename, label: 'User avatar', type: image }
+          - { property: userAvatarFilename, label: 'User avatar', type: image, base_path: '/images/' }
           - createdAt
           - genus
     SubFamily:
