@@ -14,6 +14,9 @@ easy_admin:
       help: 'Genuses are not covered by warranty!'
       list:
         help: 'Do not feed!'
+        actions:
+          - { name: edit, icon: pencil, label: Edit}
+          - { name: show, icon: info-circle, label: ''}
       search:
         help: null
     GenusNote:
