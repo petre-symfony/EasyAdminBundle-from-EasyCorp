@@ -1,4 +1,8 @@
 easy_admin:
+  site_name: Aqua<i>Note</i>
+  design:
+    assets:
+      css: ['css/custom_backend.css']
   entities:
     # List the entity class name you want to manage
     - App\Entity\Genus
