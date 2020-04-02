@@ -3,6 +3,8 @@ easy_admin:
   design:
     assets:
       css: ['css/custom_backend.css']
+    templates:
+      field_id: 'admin/fields/_id.html.twig'
   list:
     title: 'List of %%entity_label%%'
     actions: ['show']
@@ -28,8 +30,7 @@ easy_admin:
       search:
         help: null
         fields: [id, name]
-      templates:
-        field_id: 'admin/fields/_id.html.twig'
+
     GenusHorde:
       class: App\Entity\Genus
       label: Horde of Genuses 😲️ !!!
