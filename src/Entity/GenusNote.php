@@ -85,4 +85,8 @@ class GenusNote {
   public function setGenus(Genus $genus) {
     $this->genus = $genus;
   }
+
+	public function __toString() {
+		return (string) $this->getNote();
+	}
 }

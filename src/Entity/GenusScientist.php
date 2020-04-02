@@ -68,4 +68,8 @@ class GenusScientist {
   public function setYearsStudied($yearsStudied) {
     $this->yearsStudied = $yearsStudied;
   }
+
+	public function __toString() {
+		return (string) $this->getUser();
+	}
 }

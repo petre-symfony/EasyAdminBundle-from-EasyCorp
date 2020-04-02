@@ -210,4 +210,8 @@ class Genus {
 
 		return sprintf('%s recently ate: %s', $this->getName(), implode(', ', $foodItems));
 	}
+
+	public function __toString() {
+		return (string) $this->getName();
+	}
 }
