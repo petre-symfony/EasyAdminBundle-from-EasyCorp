@@ -23,5 +23,7 @@ easy_admin:
         title: 'List of notes'
     SubFamily:
       class: App\Entity\SubFamily
+      list:
+        actions: ['-show']
     User:
       class: App\Entity\User
