@@ -17,6 +17,13 @@ easy_admin:
         actions:
           - { name: edit, icon: pencil, label: Edit}
           - { name: show, icon: info-circle, label: ''}
+        fields:
+          - id
+          - name
+          - isPublished
+          - { property: firstDiscoveredAt, format: 'M Y', label: Discovered }
+          - funFact
+          - { property: speciesCount, format: '%b' }
       search:
         help: null
     GenusNote:
