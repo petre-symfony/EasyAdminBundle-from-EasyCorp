@@ -7,7 +7,12 @@ easy_admin:
     title: 'List of %%entity_label%%'
   entities:
     # List the entity class name you want to manage
-    - App\Entity\Genus
-    - App\Entity\GenusNote
-    - App\Entity\SubFamily
-    - App\Entity\User
+    Genus:
+      class: App\Entity\Genus
+      label: Genuses
+    GenusNote:
+      class: App\Entity\GenusNote
+    SubFamily:
+      class: App\Entity\SubFamily
+    User:
+      class: App\Entity\User
