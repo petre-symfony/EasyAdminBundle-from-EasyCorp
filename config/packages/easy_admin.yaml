@@ -10,6 +10,11 @@ easy_admin:
     Genus:
       class: App\Entity\Genus
       label: Genuses
+      help: 'Genuses are not covered by warranty!'
+      list:
+        help: 'Do not feed!'
+      search:
+        help: null
     GenusNote:
       class: App\Entity\GenusNote
       label: 'Genus Notes'
