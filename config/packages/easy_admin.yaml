@@ -32,6 +32,22 @@ easy_admin:
         fields: [id, name]
       templates:
         list: 'easy_admin/list.html.twig'
+      form:
+        fields:
+          - id
+          - name
+          - speciesCount
+          - funFact
+          - isPublished
+          - firstDiscoveredAt
+          - subFamily
+          - genusScientists
+      new:
+        fields:
+          - '-id'
+      edit:
+        fields:
+          - slug
     GenusHorde:
       class: App\Entity\Genus
       label: Horde of Genuses 😲️ !!!
