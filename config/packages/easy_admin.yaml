@@ -31,7 +31,7 @@ easy_admin:
         help: null
         fields: [id, name]
       templates:
-        list: 'admin/easy_admin/list.html.twig'
+        list: 'easy_admin/list.html.twig'
     GenusHorde:
       class: App\Entity\Genus
       label: Horde of Genuses 😲️ !!!
@@ -65,5 +65,5 @@ easy_admin:
           - id
           - { property: email, type: email }
           - { property: isScientist, label: 'Is Scientist?', type: boolean }
-          - fullName
+          - { property: fullName, template: 'easy_admin/_field_user_full_name.html.twig' }
           - { property: avatarUri, type: url }
