@@ -109,7 +109,6 @@
 {% endblock global_actions %}
 
 {% block batch_actions %}
-    {{ dump() }}
     {% if _has_batch_actions %}
         <div class="batch-actions" style="display: none">
             {% form_theme batch_form with easyadmin_config('design.form_theme') only %}
@@ -197,6 +196,7 @@
                             {% set _column_label =  'list.row_actions'|trans(_trans_parameters, 'EasyAdminBundle') %}
                             <td class="actions">
                                 {% block item_actions %}
+                                    {{  dump(_list_item_actions) }}
                                     {% set _actions_template = _entity_config.list.collapse_actions
                                         ? '@EasyAdmin/default/includes/_actions_dropdown.html.twig'
                                         : '@EasyAdmin/default/includes/_actions.html.twig'
