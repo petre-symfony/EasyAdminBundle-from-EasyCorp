@@ -33,7 +33,7 @@ class GenusScientistEmbeddedForm extends AbstractType {
   public function onPostSetData(FormEvent $event) {
     if ($event->getData() && $event->getData()->getId()) {
       $form = $event->getForm();
-      unset($form['user']);
+      //unset($form['user']);
     }
   }
 
