@@ -10,4 +10,9 @@ $(document).ready(function () {
   });
 
   $markdownInputs.trigger('keyup');
+
+  $('.js-delete-scientist').on('click', function(e) {
+    e.preventDefault();
+    alert('todo');
+  });
 });
