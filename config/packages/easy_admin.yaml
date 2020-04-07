@@ -34,12 +34,14 @@ easy_admin:
         list: 'easy_admin/list.html.twig'
       form:
         fields:
-          - id
+          -
+            property: id
+            type_options: { disabled: true }
           - name
           - speciesCount
-          - funFact
+          - { property: funFact, type: textarea }
           - isPublished
-          - firstDiscoveredAt
+          - { property: firstDiscoveredAt, type_options: { widget: single_text } }
           - subFamily
           - genusScientists
       new:
@@ -47,7 +49,10 @@ easy_admin:
           - '-id'
       edit:
         fields:
-          - slug
+          -
+            property: slug
+            help: 'Unique auto-generated value'
+            type_options: { disabled: true }
     GenusHorde:
       class: App\Entity\Genus
       label: Horde of Genuses 😲️ !!!
