@@ -8,6 +8,10 @@ easy_admin:
         - 'js/custom_backend.js'
     templates:
       field_id: 'admin/fields/_id.html.twig'
+    form_theme:
+      - '@EasyAdmin/form/bootstrap_4.html.twig'
+      - 'easy_admin/_form_theme.html.twig'
+
   list:
     title: 'List of %%entity_label%%'
     actions: ['show']
@@ -48,12 +52,10 @@ easy_admin:
           - { property: subFamily, type: easyadmin_autocomplete }
           -
             property: genusScientists
-            type: collection
+            type: text
             type_options:
-              entry_type: App\Form\GenusScientistEmbeddedForm
-              allow_delete: true
-              allow_add: true
-              by_reference: false
+              mapped: false
+              attr: { class: 'js-scientists-field' }
       new:
         fields:
           - '-id'
