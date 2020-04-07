@@ -43,7 +43,14 @@ easy_admin:
           - isPublished
           - { property: firstDiscoveredAt, type_options: { widget: single_text } }
           - { property: subFamily, type: easyadmin_autocomplete }
-          - genusScientists
+          -
+            property: genusScientists
+            type: collection
+            type_options:
+              entry_type: App\Form\GenusScientistEmbeddedForm
+              allow_delete: true
+              allow_add: true
+              by_reference: false
       new:
         fields:
           - '-id'
