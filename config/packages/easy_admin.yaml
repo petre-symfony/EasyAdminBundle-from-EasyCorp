@@ -45,6 +45,7 @@ easy_admin:
             label: Feed Genus
             css_class: 'btn btn-info'
             icon: cutlery
+          - { name: changePublishedStatus, css_class: btn }
       templates:
         list: 'easy_admin/list.html.twig'
       form:
