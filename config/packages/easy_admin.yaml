@@ -102,6 +102,7 @@ easy_admin:
       disabled_actions: ['show']
     User:
       class: App\Entity\User
+      controller: App\Controller\EasyAdmin\UserController
       list:
         fields:
           - id
