@@ -19,6 +19,7 @@ easy_admin:
     # List the entity class name you want to manage
     Genus:
       class: App\Entity\Genus
+      controller: App\Controller\EasyAdmin\GenusController
       label: Genuses
       help: 'Genuses are not covered by warranty!'
       list:
