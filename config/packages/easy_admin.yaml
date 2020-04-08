@@ -37,6 +37,14 @@ easy_admin:
       search:
         help: null
         fields: [id, name]
+      show:
+        actions:
+          -
+            name: genus_feed
+            type: route
+            label: Feed Genus
+            css_class: 'btn btn-info'
+            icon: cutlery
       templates:
         list: 'easy_admin/list.html.twig'
       form:
