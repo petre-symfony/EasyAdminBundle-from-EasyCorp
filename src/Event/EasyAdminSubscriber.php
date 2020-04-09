@@ -17,7 +17,8 @@ class EasyAdminSubscriber implements EventSubscriberInterface {
 
 	public static function getSubscribedEvents() {
 		return [
-			EasyAdminEvents::PRE_UPDATE => 'onPreUpdate'
+			EasyAdminEvents::PRE_UPDATE => 'onPreUpdate',
+			EasyAdminEvents::POST_EDIT => 'onPreEdit'
 		];
 	}
 
@@ -35,4 +36,7 @@ class EasyAdminSubscriber implements EventSubscriberInterface {
 		}
 	}
 
+	public function onPreEdit(GenericEvent $event){
+		dd($event);
+	}
 }
