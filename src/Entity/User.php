@@ -89,6 +89,11 @@ class User implements UserInterface {
    */
   private $updatedAt;
 
+  /**
+   * @ORM\ManyToOne(targetEntity="App\Entity\User")
+   */
+  private $lastUpdatedBy;
+
   public function __construct() {
     $this->studiedGenuses = new ArrayCollection();
   }
@@ -232,6 +237,16 @@ class User implements UserInterface {
 
   public function setUpdatedAt(?\DateTimeInterface $updatedAt): self {
 		$this->updatedAt = $updatedAt;
+
+		return $this;
+  }
+
+  public function getLastUpdatedBy(): ?self {
+		return $this->lastUpdatedBy;
+  }
+
+  public function setLastUpdatedBy(?self $lastUpdatedBy): self {
+		$this->lastUpdatedBy = $lastUpdatedBy;
 
 		return $this;
   }
