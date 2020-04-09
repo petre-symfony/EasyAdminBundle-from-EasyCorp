@@ -9,6 +9,7 @@ easy_admin:
     templates:
       field_id: 'admin/fields/_id.html.twig'
       list: 'easy_admin/list.html.twig'
+      show: 'easy_admin/show.html.twig'
     form_theme:
       - '@EasyAdmin/form/bootstrap_4.html.twig'
       - 'easy_admin/_form_theme.html.twig'
