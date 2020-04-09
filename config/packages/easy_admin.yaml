@@ -8,6 +8,7 @@ easy_admin:
         - 'js/custom_backend.js'
     templates:
       field_id: 'admin/fields/_id.html.twig'
+      list: 'easy_admin/list.html.twig'
     form_theme:
       - '@EasyAdmin/form/bootstrap_4.html.twig'
       - 'easy_admin/_form_theme.html.twig'
@@ -47,8 +48,7 @@ easy_admin:
             css_class: 'btn btn-info'
             icon: cutlery
           - { name: changePublishedStatus, css_class: btn }
-      templates:
-        list: 'easy_admin/list.html.twig'
+
       form:
         fields:
           -
