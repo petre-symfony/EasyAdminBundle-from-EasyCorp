@@ -36,6 +36,10 @@ class EasyAdminExtension extends AbstractExtension  implements ServiceSubscriber
 		{
 			unset($itemActions['edit']);
 		}
+
+		//this action is rendered manually
+		unset($itemActions['export']);
+
 		return $itemActions;
 	}
 
