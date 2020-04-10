@@ -15,11 +15,11 @@ easy_admin:
       - 'easy_admin/_form_theme.html.twig'
     menu:
       - { label: Dashboard, route: admin_dashboard, default: true }
-      - User
+      - { entity: User, label: Users, icon: 'user' }
       - Genus
       - GenusHorde
-      - GenusNote
-      - SubFamily
+      - { entity: GenusNote, label: Notes, icon: 'sticky-note' }
+      - { entity: SubFamily, label: Sub-Families, icon: '' }
 
 
   list:
