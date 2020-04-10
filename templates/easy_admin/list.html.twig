@@ -7,6 +7,7 @@
 {% endblock %}
 
 {% block global_actions %}
+  {{ parent() }}
   {% if easyadmin_action_is_enabled_for_list_view('export', _entity_config.name) %}
     <div class="button-action">
       <a  class="btn btn-primary" href="{{ path('easyadmin', _request_parameters|merge({action: 'export'})) }}">
