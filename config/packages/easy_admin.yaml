@@ -16,11 +16,14 @@ easy_admin:
     menu:
       - { label: Dashboard, route: admin_dashboard, default: true }
       - { entity: User, label: Users, icon: 'user' }
-      - { label: Genus }
-      - Genus
-      - GenusHorde
-      - { entity: GenusNote, label: Notes, icon: 'sticky-note' }
-      - { entity: SubFamily, label: Sub-Families, icon: '' }
+      -
+        label: Genus
+        children:
+          - Genus
+          - GenusHorde
+          - { label: Related }
+          - { entity: GenusNote, label: Notes, icon: 'sticky-note' }
+          - { entity: SubFamily, label: Sub-Families, icon: '' }
 
 
   list:
