@@ -52,6 +52,27 @@ easy_admin:
 
       form:
         fields:
+          - { type: group, css_class: 'col-sm-6', label: 'Basic Information' }
+          - name
+          - speciesCount
+          - { property: firstDiscoveredAt, type_options: { widget: single_text } }
+          - { property: subFamily, type: easyadmin_autocomplete }
+          - { type: section, label: Optional }
+          - { property: funFact, type: textarea, css_class: 'js-markdown-input' }
+          - isPublished
+          - { type: group, css_class: 'col-sm-6', label: 'Studied by ...' }
+          -
+            property: genusScientists
+            type: text
+            type_options:
+              mapped: false
+              attr: { class: 'js-scientists-field' }
+          -
+            type: group
+            css_class: 'col-sm-6'
+            label: Identification
+            icon: id-card-o
+            help: For administrators
           -
             property: id
             type_options: { disabled: true }
@@ -59,18 +80,6 @@ easy_admin:
             property: slug
             help: 'Unique auto-generated value'
             type_options: { disabled: true }
-          - name
-          - speciesCount
-          - { property: funFact, type: textarea, css_class: 'js-markdown-input' }
-          - isPublished
-          - { property: firstDiscoveredAt, type_options: { widget: single_text } }
-          - { property: subFamily, type: easyadmin_autocomplete }
-          -
-            property: genusScientists
-            type: text
-            type_options:
-              mapped: false
-              attr: { class: 'js-scientists-field' }
       new:
         fields:
           - '-id'
