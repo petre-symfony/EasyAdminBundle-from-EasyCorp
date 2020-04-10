@@ -15,10 +15,17 @@ easy_admin:
       - 'easy_admin/_form_theme.html.twig'
     menu:
       - { label: Dashboard, route: admin_dashboard, default: true }
+      - { label: 'Open Front-end', route: app_genus_list, default: true }
       - { entity: User, label: Users, icon: 'user' }
       -
         label: Genus
         children:
+          -
+            entity: Genus
+            label: 'Pet genus'
+            params:
+              action: show
+              id: 2
           - Genus
           -
             entity: Genus
