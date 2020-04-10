@@ -13,6 +13,13 @@ easy_admin:
     form_theme:
       - '@EasyAdmin/form/bootstrap_4.html.twig'
       - 'easy_admin/_form_theme.html.twig'
+    menu:
+      - User
+      - Genus
+      - GenusHorde
+      - GenusNote
+      - SubFamily
+
 
   list:
     title: 'List of %%entity_label%%'
