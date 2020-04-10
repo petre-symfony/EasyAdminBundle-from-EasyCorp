@@ -14,6 +14,7 @@ easy_admin:
       - '@EasyAdmin/form/bootstrap_4.html.twig'
       - 'easy_admin/_form_theme.html.twig'
     menu:
+      - { label: Dashboard, route: admin_dashboard, default: true }
       - User
       - Genus
       - GenusHorde
