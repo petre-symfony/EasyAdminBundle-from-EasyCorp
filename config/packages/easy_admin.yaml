@@ -114,12 +114,17 @@ easy_admin:
           - { property: avatarUri, type: url }
       form:
         fields:
+          - { type: section, label: 'User details' }
           - { property: fullName, type: text, help: 'First then Last' }
           - { type: divider }
           - avatarUri
-          - { type: divider }
+          -
+            type: section
+            label: Contact information
+            icon: phone
+            help: 'Obly for emergencies!'
+            css_class: 'any-you-want'
           - email
-          - { type: divider }
+          - { type: section, label: Education }
           - isScientist
-          - avatarUri
           - universityName
